@@ -1,0 +1,47 @@
+label {
+  display: block;
+  width: 100%;
+  border-bottom: #F5F5F5 2px solid;
+
+  .checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked ~ .title {
+      text-decoration: line-through;
+      color: #d5caca;
+    }
+  }
+
+  .checkStyle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid green;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+
+  .checkbox:checked + .checkStyle::before {
+    content: '\2713';
+    color: green;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  .title {
+    margin-left: 50px;
+    font-size: 30px;
+  }
+
+}

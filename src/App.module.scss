@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+
+  .title {
+    font-size: 150px;
+    font-weight: lighter;
+    color: #E9D9D8;
+  }
+}
+

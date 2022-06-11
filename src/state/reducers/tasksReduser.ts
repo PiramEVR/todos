@@ -29,7 +29,7 @@ type ActionType = ReturnType<typeof addTask>
     | ReturnType<typeof removeCompletedTasks>
     | ReturnType<typeof changeStatus>
 
-type TasksType = {
+export type TasksType = {
     id: string
     title: string
     isDone: boolean

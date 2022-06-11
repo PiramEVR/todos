@@ -1,6 +1,6 @@
-import {addTask, changeStatus, removeCompletedTasks, tasksReducer} from "../reducers/tasksReduser";
+import {addTask, changeStatus, removeCompletedTasks, tasksReducer, TasksType} from "../reducers/tasksReduser";
 
-const state =[
+const state: TasksType[] =[
     {id: '1', title: 'task 1', isDone: false},
     {id: '2', title: 'task 2', isDone: true},
     {id: '3', title: 'task 3', isDone: false},

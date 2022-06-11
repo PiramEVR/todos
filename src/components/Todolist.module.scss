@@ -1,0 +1,93 @@
+.todo {
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
+  0 10px 0 -5px #eee,
+  0 10px 1px -4px rgba(0, 0, 0, 0.15),
+  0 20px 0 -10px #eee,
+  0 20px 1px -9px rgba(0, 0, 0, 0.15);
+
+  & div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: #F5F5F5 2px solid;
+    width: 100%;
+
+  }
+
+  & div:last-child {
+    border-bottom: none;
+  }
+
+  .inputBlock {
+    .downArrow {
+      font-size: 30px;
+      display: inline-block;
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+      padding: 10px;
+      color: #d5caca;
+
+      &:before {
+        content: '\276F';
+      }
+    }
+
+    .inputText[type="text"] {
+      width: 100%;
+      outline: none;
+      border: none;
+      font-size: 30px;
+      margin-left: 10px;
+
+      &::-webkit-input-placeholder {
+        color: #d5caca;
+      }
+
+      &::-moz-placeholder {
+        color: #d5caca;
+      }
+
+      /* Firefox 19+ */
+      &:-moz-placeholder {
+        color: #d5caca;
+      }
+
+      /* Firefox 18- */
+      &:-ms-input-placeholder {
+        color: #d5caca;
+      }
+
+    }
+  }
+
+  .footerItems {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+
+    .filter {
+      span {
+        margin: 10px;
+        cursor: pointer;
+        padding: 5px 10px;
+      }
+
+      .active {
+        border: #E9D9D8 solid 2px;
+      }
+    }
+
+    .clearCompleted {
+      cursor: pointer;
+    }
+  }
+
+}
