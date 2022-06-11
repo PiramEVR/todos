@@ -1,4 +1,4 @@
-import React, {ChangeEvent, KeyboardEvent, useCallback, useState} from 'react';
+import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import {useDispatch} from "react-redux";
 import {useAppSelector} from "../state/store";
 import {selectActiveTasks, selectAllTasks, selectCompletedTasks} from "../state/selectors/selectors";
@@ -60,7 +60,7 @@ export const Todolist = () => {
     return (
         <div className={style.todo}>
             <div className={style.inputBlock}>
-                <span className={style.downArrow}></span>
+                <span className={style.downArrow}/>
                 <input className={style.inputText}
                        type="text" placeholder={error ? error : 'What needs to be done?'}
                        value={title} onChange={onChangeHandler}

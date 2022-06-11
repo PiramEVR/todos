@@ -1,4 +1,4 @@
-import React, {ChangeEvent, memo} from 'react';
+import React, {ChangeEvent} from 'react';
 import {TasksType} from "../state/reducers/tasksReduser";
 import style from './Tasks.module.scss'
 
@@ -19,7 +19,7 @@ export const Tasks = ({tasks, callback}: TasksPropsType) => {
                    onChange={(e: ChangeEvent<HTMLInputElement>) => {
                        onChangeHandler(t.id, e)
                    }}/>
-            <span className={style.checkStyle}></span>
+            <span className={style.checkStyle}/>
             <span className={style.title}>{t.title}</span>
 
         </label>
